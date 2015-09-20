@@ -34,19 +34,15 @@ int main(int argc, char * argv[]){
 	argc -= optind; //reset count ignoring Options
 	argv += optind;
 
-	for (count = 1; count < argc; count++){ //for each output file declared
-		FILE *out_file = fopen(argv[count], "w");
-		fprintf(stdout, "Initial location: %p\n", out_file);
+	for (count = 1; count < argc; count++){ //handle each output file declared
+		FILE *out_file;
 
-		if (append){ // if Append option is declared, set up file to be appendable
+		if (append == 0)  // if append option is not declared, overwrite the file
+			out_file = fopen(argv[count], "w");
+		else if (append) // if append option is declared, set up file to be appendable
 			out_file = fopen(argv[count], "a");
-			fseek(out_file, 0, SEEK_END);
-			fprintf(stdout, "Appended location: %p\n", out_file);
-			}
 
-		fprintf(stdout, "Current location: %p\n", out_file);
 		while (fscanf(in,"%79[^\n]\n", line) == 1){ // copy each line of inputted file
-			
 			fprintf(out_file, "%s\n", line);
 			fprintf(stdout,"%s\n", line);	
 		}
