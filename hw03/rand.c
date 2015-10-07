@@ -89,7 +89,53 @@ float my_random_float2()
 // compute a random double using my algorithm
 double my_random_double()
 {
-  // TODO: fill this in
+//BOX: used to access the double's bit values
+  typedef union {
+    double d;
+    int i;
+  } Box;
+
+//Get_bit: returns random bit. Bits are generated 63 at a time 
+  int get_bit(){
+  	int bit;
+  	static bits=0;
+  	static x;
+
+  	if (bits==0){
+  		x = random();
+  		bits = 52; //*
+  	}
+  	bit = x & 1;
+  	x = x >> 1;
+  	bits--;
+  	return bit;
+  }
+
+  //RANDD: returns random double number in (0,1)
+  double randd() {
+  	int x, mant, exp, high_exp, low_exp;
+  	Box low, high, ans;
+
+  	low.d = 0.00;
+  	high.d = 1.00;
+
+  	low_exp = (low.i >> 52) & 0x0000ff;
+  	high_exp = (high.i >> 52) & 0x0000ff;
+
+  	for (exp = high_exp-1; exp > low_exp; exp--) {
+  		if(get_bit()) break;
+  	}
+
+  	mant = random() & 0x7ffffffffffff;
+
+  	if (mant ==0 && get_bit()) exp++;
+  	ans.i = (exp << 52) | mant;
+
+  	return ans.d;
+  }
+
+
+  
 }
 
 // return a constant (this is a dummy function for time trials)
