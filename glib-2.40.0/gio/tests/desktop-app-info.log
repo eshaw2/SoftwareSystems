@@ -1,0 +1,18 @@
+# random seed: R02S377a1650f489a2668ee140dad5d24ed0
+# Start of desktop-app-info tests
+ok 1 /desktop-app-info/delete
+PASS: desktop-app-info 1 /desktop-app-info/delete
+ok 2 /desktop-app-info/default
+PASS: desktop-app-info 2 /desktop-app-info/default
+ok 3 /desktop-app-info/fallback
+PASS: desktop-app-info 3 /desktop-app-info/fallback
+ok 4 /desktop-app-info/lastused
+PASS: desktop-app-info 4 /desktop-app-info/lastused
+ok 5 /desktop-app-info/extra-getters
+PASS: desktop-app-info 5 /desktop-app-info/extra-getters
+ok 6 /desktop-app-info/actions
+PASS: desktop-app-info 6 /desktop-app-info/actions
+ok 7 /desktop-app-info/search
+PASS: desktop-app-info 7 /desktop-app-info/search
+# End of desktop-app-info tests
+1..7

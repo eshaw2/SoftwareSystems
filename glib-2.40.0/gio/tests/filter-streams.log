@@ -1,0 +1,13 @@
+# random seed: R02S444926e2b5742ab7136872630dabdfe1
+# Start of filter-stream tests
+# Bug Reference: http://bugzilla.gnome.org/568394
+ok 1 /filter-stream/input
+PASS: filter-streams 1 /filter-stream/input
+ok 2 /filter-stream/output
+PASS: filter-streams 2 /filter-stream/output
+ok 3 /filter-stream/async-input
+PASS: filter-streams 3 /filter-stream/async-input
+ok 4 /filter-stream/async-output
+PASS: filter-streams 4 /filter-stream/async-output
+# End of filter-stream tests
+1..4

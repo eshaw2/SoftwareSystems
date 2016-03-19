@@ -1,0 +1,56 @@
+# random seed: R02Sb7c6e57975ef561b8ec7ab0db641b7d1
+# Start of converter tests
+ok 1 /converter/basics
+PASS: converter-stream 1 /converter/basics
+# End of converter tests
+# Start of converter-input-stream tests
+ok 2 /converter-input-stream/expander
+PASS: converter-stream 2 /converter-input-stream/expander
+ok 3 /converter-input-stream/compressor
+PASS: converter-stream 3 /converter-input-stream/compressor
+# Start of truncation tests
+ok 4 /converter-input-stream/truncation/zlib
+PASS: converter-stream 4 /converter-input-stream/truncation/zlib
+ok 5 /converter-input-stream/truncation/gzip
+PASS: converter-stream 5 /converter-input-stream/truncation/gzip
+ok 6 /converter-input-stream/truncation/raw
+PASS: converter-stream 6 /converter-input-stream/truncation/raw
+# End of truncation tests
+# Start of charset tests
+ok 7 /converter-input-stream/charset/utf8->latin1
+PASS: converter-stream 7 /converter-input-stream/charset/utf8->latin1
+ok 8 /converter-input-stream/charset/latin1->utf8
+PASS: converter-stream 8 /converter-input-stream/charset/latin1->utf8
+ok 9 /converter-input-stream/charset/fallbacks
+PASS: converter-stream 9 /converter-input-stream/charset/fallbacks
+# End of charset tests
+# End of converter-input-stream tests
+# Start of converter-output-stream tests
+# Start of roundtrip tests
+# Bug Reference: http://bugzilla.gnome.org/619945
+ok 10 /converter-output-stream/roundtrip/zlib-0
+PASS: converter-stream 10 /converter-output-stream/roundtrip/zlib-0
+# Bug Reference: http://bugzilla.gnome.org/619945
+ok 11 /converter-output-stream/roundtrip/zlib-9
+PASS: converter-stream 11 /converter-output-stream/roundtrip/zlib-9
+# Bug Reference: http://bugzilla.gnome.org/619945
+ok 12 /converter-output-stream/roundtrip/gzip-0
+PASS: converter-stream 12 /converter-output-stream/roundtrip/gzip-0
+# Bug Reference: http://bugzilla.gnome.org/619945
+ok 13 /converter-output-stream/roundtrip/gzip-9
+PASS: converter-stream 13 /converter-output-stream/roundtrip/gzip-9
+# Bug Reference: http://bugzilla.gnome.org/619945
+ok 14 /converter-output-stream/roundtrip/raw-0
+PASS: converter-stream 14 /converter-output-stream/roundtrip/raw-0
+# Bug Reference: http://bugzilla.gnome.org/619945
+ok 15 /converter-output-stream/roundtrip/raw-9
+PASS: converter-stream 15 /converter-output-stream/roundtrip/raw-9
+# End of roundtrip tests
+# End of converter-output-stream tests
+# Start of converter-stream tests
+ok 16 /converter-stream/pollable
+PASS: converter-stream 16 /converter-stream/pollable
+ok 17 /converter-stream/leftover
+PASS: converter-stream 17 /converter-stream/leftover
+# End of converter-stream tests
+1..17

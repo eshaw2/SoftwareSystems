@@ -1,0 +1,12 @@
+# random seed: R02S69c7196dde6ebc08842cc606e1664365
+# Start of asyncqueue tests
+ok 1 /asyncqueue/sort
+PASS: asyncqueue 1 /asyncqueue/sort
+ok 2 /asyncqueue/destroy
+PASS: asyncqueue 2 /asyncqueue/destroy
+ok 3 /asyncqueue/threads
+PASS: asyncqueue 3 /asyncqueue/threads
+ok 4 /asyncqueue/timed
+PASS: asyncqueue 4 /asyncqueue/timed
+# End of asyncqueue tests
+1..4

@@ -1,0 +1,10 @@
+# random seed: R02Sd6d52f17eaa2f49e32b9086fcd5726cb
+# Start of gdbus tests
+# Start of proxy tests
+........................................................................................................................................................................................................
+ok 1 /gdbus/proxy/vs-threads
+PASS: gdbus-proxy-threads 1 /gdbus/proxy/vs-threads
+# End of proxy tests
+# End of gdbus tests
+1..1
+cleaning up pid 5464

@@ -1,0 +1,10 @@
+# random seed: R02Sc769b70275ac5f913551bb39cda012ce
+# Start of gdbus tests
+ok 1 /gdbus/object-registration
+PASS: gdbus-export 1 /gdbus/object-registration
+ok 2 /gdbus/registered-interfaces
+PASS: gdbus-export 2 /gdbus/registered-interfaces
+ok 3 /gdbus/async-properties
+PASS: gdbus-export 3 /gdbus/async-properties
+# End of gdbus tests
+1..3

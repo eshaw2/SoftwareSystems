@@ -1,0 +1,324 @@
+# random seed: R02Se70e4bcfb2203c3f9b71c63725ddd30d
+# Start of live-g-file tests
+
+  Cleaning target testing structure in 'testdir_live-g-file'...
+ok 1 /live-g-file/prep_clean_structure
+PASS: live-g-file 1 /live-g-file/prep_clean_structure
+
+  Going to create testing structure in 'testdir_live-g-file'...
+    Creating directory 'dir1'...
+    Creating directory 'dir1/subdir'...
+    Creating directory 'dir2'...
+    Creating directory 'dir-target'...
+    Creating directory 'dir_no-access'...
+    Creating directory 'dir_no-write'...
+    Creating file 'target-file'...
+    Creating file 'normal_file'...
+    Creating symlink 'normal_file-symlink' --> 'normal_file'...
+    Creating file 'executable_file'...
+    Creating file 'private_file'...
+    Creating file 'normal_file2'...
+    Creating file 'readonly_file'...
+    Creating file 'UTF_pr?i?lis? z'...
+    Creating directory 'dir_pr?i?lis? z'...
+    Creating symlink 'lost_symlink' --> 'nowhere'...
+    Creating directory 'dir_hidden'...
+    Creating file 'dir_hidden/.a-hidden-file'...
+    Creating file 'dir_hidden/file-in-.hidden1'...
+    Creating file 'dir_hidden/file-in-.hidden2'...
+    Creating pattern file... done.
+ok 2 /live-g-file/create_structure
+PASS: live-g-file 2 /live-g-file/create_structure
+
+  Testing sample structure in 'testdir_live-g-file'...
+    Testing file 'dir1'...
+    Testing file 'dir1/subdir'...
+    Testing file 'dir2'...
+    Testing file 'dir-target'...
+    Testing file 'dir_no-access'...
+    Testing file 'dir_no-write'...
+    Testing file 'target-file'...
+    Testing file 'normal_file'...
+    Testing file 'normal_file-symlink'...
+    Testing file 'executable_file'...
+    Testing file 'private_file'...
+    Testing file 'normal_file2'...
+    Testing file 'readonly_file'...
+    Testing file 'UTF_pr?i?lis? z'...
+    Testing file 'dir_pr?i?lis? z'...
+    Testing file 'lost_symlink'...
+    Testing file 'dir_hidden'...
+    Testing file 'dir_hidden/.a-hidden-file'...
+    Testing file 'dir_hidden/file-in-.hidden1'...
+    Testing file 'dir_hidden/file-in-.hidden2'...
+    Testing pattern file...
+      read 65536 bytes, total = 65536 of 65536.
+ok 3 /live-g-file/test_initial_structure
+PASS: live-g-file 3 /live-g-file/test_initial_structure
+
+  Traversing through the sample structure in 'testdir_live-g-file'...
+  Found file dir1, relative to root: dir1
+  Found file subdir, relative to root: dir1/subdir
+  Found file dir2, relative to root: dir2
+  Found file dir-target, relative to root: dir-target
+  Found file dir_no-access, relative to root: dir_no-access
+  Found file dir_no-write, relative to root: dir_no-write
+  Found file target-file, relative to root: target-file
+  Found file normal_file, relative to root: normal_file
+  Found file normal_file-symlink, relative to root: normal_file-symlink
+  Found file executable_file, relative to root: executable_file
+  Found file private_file, relative to root: private_file
+  Found file normal_file2, relative to root: normal_file2
+  Found file readonly_file, relative to root: readonly_file
+  Found file UTF_pr?i?lis? z, relative to root: UTF_pr?i?lis? z
+  Found file dir_pr?i?lis? z, relative to root: dir_pr?i?lis? z
+  Found file lost_symlink, relative to root: lost_symlink
+  Found file dir_hidden, relative to root: dir_hidden
+  Found file .a-hidden-file, relative to root: dir_hidden/.a-hidden-file
+  Found file file-in-.hidden1, relative to root: dir_hidden/file-in-.hidden1
+  Found file .hidden, relative to root: dir_hidden/.hidden
+  Found file file-in-.hidden2, relative to root: dir_hidden/file-in-.hidden2
+  Found file pattern_file, relative to root: pattern_file
+ok 4 /live-g-file/test_traverse_structure
+PASS: live-g-file 4 /live-g-file/test_traverse_structure
+
+  Test enumerate 'testdir_live-g-file'...
+    Testing file 'dir_no-access'
+    Testing file 'normal_file'
+    Testing file 'normal_file-symlink'
+    Testing file 'not_exists'
+    Testing file 'not_exists'
+    Testing file 'not_exists2'
+    Testing file 'not_exists3'
+    Testing file 'not_exists4'
+    Testing file 'dir_no-execute/file'
+ok 5 /live-g-file/test_enumerate
+PASS: live-g-file 5 /live-g-file/test_enumerate
+
+  test_open: 'dir1'
+  test_open: 'dir_no-access'
+  test_open: 'target-file'
+  test_open: 'normal_file-symlink'
+  test_open: 'executable_file'
+  test_open: 'private_file'
+  test_open: 'readonly_file'
+  test_open: 'UTF_pr?i?lis? z'
+  test_open: 'pattern_file'
+  test_open: 'not_exists'
+  test_open: 'dir_no-execute/file'
+  test_open: 'lost_symlink'
+ok 6 /live-g-file/test_open
+PASS: live-g-file 6 /live-g-file/test_open
+
+  test_create: 'dir1'
+       error code 3 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir1': Is a directory
+  test_create: 'dir1/subdir'
+       error code 3 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir1/subdir': Is a directory
+  test_create: 'dir2'
+       error code 2 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir2': File exists
+  test_create: 'normal_file'
+       error code 2 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/normal_file': File exists
+  test_create: 'executable_file'
+  test_create: 'private_file'
+  test_create: 'normal_file2'
+  test_create: 'UTF_pr?i?lis? z'
+       error code 2 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/UTF_pr?i?lis? z': File exists
+  test_create: 'dir_pr?i?lis? z'
+       error code 2 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_pr?i?lis? z': File exists
+  test_create: 'pattern_file'
+  test_create: 'not_exists2'
+  test_create: 'not_exists3'
+  test_create: 'not_exists4'
+ok 7 /live-g-file/test_create
+PASS: live-g-file 7 /live-g-file/test_create
+
+    do_copy_move: 'dir1/subdir' --> 'dir-target'
+       res = 0, error code 25 = Can't recursively copy directory
+    do_copy_move: 'dir1/subdir' --> '.'
+       res = 0, error code 2 = Target file exists
+    do_copy_move: 'dir1/subdir' --> 'target-file'
+       res = 0, error code 4 = Error when getting information for file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/target-file/dir1/subdir': Not a directory
+    do_copy_move: 'dir1/subdir' --> 'not_exists'
+       res = 0, error code 25 = Can't recursively copy directory
+    do_copy_move: 'dir1/subdir' --> 'dir_no-access'
+       res = 0, error code 25 = Can't recursively copy directory
+    do_copy_move: 'dir1/subdir' --> 'dir_no-write'
+       res = 0, error code 25 = Can't recursively copy directory
+    do_copy_move: 'dir2' --> 'dir-target'
+    do_copy_move: 'dir-target' --> 'dir-target'
+       res = 0, error code 25 = Can't recursively copy directory
+    do_copy_move: 'dir-target' --> '.'
+       res = 0, error code 2 = Target file exists
+    do_copy_move: 'dir-target' --> 'target-file'
+       res = 0, error code 4 = Error when getting information for file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/target-file/dir-target': Not a directory
+    do_copy_move: 'dir-target' --> 'not_exists'
+       res = 0, error code 25 = Can't recursively copy directory
+    do_copy_move: 'dir-target' --> 'dir_no-access'
+       res = 0, error code 25 = Can't recursively copy directory
+    do_copy_move: 'dir-target' --> 'dir_no-write'
+       res = 0, error code 25 = Can't recursively copy directory
+    do_copy_move: 'target-file' --> 'dir-target'
+    do_copy_move: 'target-file' --> '.'
+       res = 0, error code 2 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/target-file': File exists
+    do_copy_move: 'target-file' --> 'target-file'
+       res = 0, error code 4 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/target-file/target-file': Not a directory
+    do_copy_move: 'target-file' --> 'not_exists'
+       res = 0, error code 1 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists/target-file': No such file or directory
+    do_copy_move: 'target-file' --> 'dir_no-access'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-access/target-file': Permission denied
+    do_copy_move: 'target-file' --> 'dir_no-write'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-write/target-file': Permission denied
+    do_copy_move: 'normal_file-symlink' --> 'dir-target'
+    do_copy_move: 'normal_file-symlink' --> '.'
+       res = 0, error code 2 = Error making symbolic link: File exists
+    do_copy_move: 'normal_file-symlink' --> 'target-file'
+       res = 0, error code 4 = Error making symbolic link: Not a directory
+    do_copy_move: 'normal_file-symlink' --> 'not_exists'
+       res = 0, error code 1 = Error making symbolic link: No such file or directory
+    do_copy_move: 'normal_file-symlink' --> 'dir_no-access'
+       res = 0, error code 14 = Error making symbolic link: Permission denied
+    do_copy_move: 'normal_file-symlink' --> 'dir_no-write'
+       res = 0, error code 14 = Error making symbolic link: Permission denied
+    do_copy_move: 'executable_file' --> 'dir-target'
+    do_copy_move: 'executable_file' --> 'dir-target'
+    do_copy_move: 'executable_file' --> '.'
+       res = 0, error code 2 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/executable_file': File exists
+    do_copy_move: 'executable_file' --> 'target-file'
+       res = 0, error code 4 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/target-file/executable_file': Not a directory
+    do_copy_move: 'executable_file' --> 'not_exists'
+       res = 0, error code 1 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists/executable_file': No such file or directory
+    do_copy_move: 'executable_file' --> 'dir_no-access'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-access/executable_file': Permission denied
+    do_copy_move: 'executable_file' --> 'dir_no-write'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-write/executable_file': Permission denied
+    do_copy_move: 'private_file' --> 'dir-target'
+    do_copy_move: 'private_file' --> 'dir-target'
+    do_copy_move: 'private_file' --> '.'
+       res = 0, error code 2 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/private_file': File exists
+    do_copy_move: 'private_file' --> 'target-file'
+       res = 0, error code 4 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/target-file/private_file': Not a directory
+    do_copy_move: 'private_file' --> 'not_exists'
+       res = 0, error code 1 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists/private_file': No such file or directory
+    do_copy_move: 'private_file' --> 'dir_no-access'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-access/private_file': Permission denied
+    do_copy_move: 'private_file' --> 'dir_no-write'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-write/private_file': Permission denied
+    do_copy_move: 'normal_file2' --> 'dir-target'
+    do_copy_move: 'normal_file2' --> 'dir-target'
+    do_copy_move: 'normal_file2' --> '.'
+       res = 0, error code 2 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/normal_file2': File exists
+    do_copy_move: 'normal_file2' --> 'target-file'
+       res = 0, error code 4 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/target-file/normal_file2': Not a directory
+    do_copy_move: 'normal_file2' --> 'not_exists'
+       res = 0, error code 1 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists/normal_file2': No such file or directory
+    do_copy_move: 'normal_file2' --> 'dir_no-access'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-access/normal_file2': Permission denied
+    do_copy_move: 'normal_file2' --> 'dir_no-write'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-write/normal_file2': Permission denied
+    do_copy_move: 'UTF_pr?i?lis? z' --> 'dir-target'
+    do_copy_move: 'UTF_pr?i?lis? z' --> 'dir-target'
+    do_copy_move: 'UTF_pr?i?lis? z' --> '.'
+       res = 0, error code 2 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/UTF_pr?i?lis? z': File exists
+    do_copy_move: 'UTF_pr?i?lis? z' --> 'target-file'
+       res = 0, error code 4 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/target-file/UTF_pr?i?lis? z': Not a directory
+    do_copy_move: 'UTF_pr?i?lis? z' --> 'not_exists'
+       res = 0, error code 1 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists/UTF_pr?i?lis? z': No such file or directory
+    do_copy_move: 'UTF_pr?i?lis? z' --> 'dir_no-access'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-access/UTF_pr?i?lis? z': Permission denied
+    do_copy_move: 'UTF_pr?i?lis? z' --> 'dir_no-write'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-write/UTF_pr?i?lis? z': Permission denied
+    do_copy_move: 'pattern_file' --> 'dir-target'
+    do_copy_move: 'pattern_file' --> '.'
+       res = 0, error code 2 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/pattern_file': File exists
+    do_copy_move: 'pattern_file' --> 'target-file'
+       res = 0, error code 4 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/target-file/pattern_file': Not a directory
+    do_copy_move: 'pattern_file' --> 'not_exists'
+       res = 0, error code 1 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists/pattern_file': No such file or directory
+    do_copy_move: 'pattern_file' --> 'dir_no-access'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-access/pattern_file': Permission denied
+    do_copy_move: 'pattern_file' --> 'dir_no-write'
+       res = 0, error code 14 = Error opening file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-write/pattern_file': Permission denied
+    do_copy_move: 'not_exists' --> 'dir-target'
+       res = 0, error code 1 = Error when getting information for file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists': No such file or directory
+    do_copy_move: 'not_exists' --> '.'
+       res = 0, error code 1 = Error when getting information for file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists': No such file or directory
+    do_copy_move: 'not_exists' --> 'target-file'
+       res = 0, error code 1 = Error when getting information for file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists': No such file or directory
+    do_copy_move: 'not_exists' --> 'not_exists'
+       res = 0, error code 1 = Error when getting information for file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists': No such file or directory
+    do_copy_move: 'not_exists' --> 'dir_no-access'
+       res = 0, error code 1 = Error when getting information for file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists': No such file or directory
+    do_copy_move: 'not_exists' --> 'dir_no-write'
+       res = 0, error code 1 = Error when getting information for file '/home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists': No such file or directory
+    do_copy_move: 'not_exists' --> 'dir-target'
+       res = 0, error code 1 = Error moving file: No such file or directory
+    do_copy_move: 'lost_symlink' --> 'dir-target'
+    do_copy_move: 'lost_symlink' --> '.'
+       res = 0, error code 2 = Error making symbolic link: File exists
+    do_copy_move: 'lost_symlink' --> 'target-file'
+       res = 0, error code 4 = Error making symbolic link: Not a directory
+    do_copy_move: 'lost_symlink' --> 'not_exists'
+       res = 0, error code 1 = Error making symbolic link: No such file or directory
+    do_copy_move: 'lost_symlink' --> 'dir_no-access'
+       res = 0, error code 14 = Error making symbolic link: Permission denied
+    do_copy_move: 'lost_symlink' --> 'dir_no-write'
+       res = 0, error code 14 = Error making symbolic link: Permission denied
+ok 8 /live-g-file/test_copy_move
+PASS: live-g-file 8 /live-g-file/test_copy_move
+
+  Deleting dir1, path = /home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir1
+      result = 0, error = Error removing file: Directory not empty
+  Deleting dir2, path = /home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir2
+      result = 0, error = Error removing file: No such file or directory
+  Deleting executable_file, path = /home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/executable_file
+  Deleting readonly_file, path = /home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/readonly_file
+  Deleting dir_pr?i?lis? z, path = /home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_pr?i?lis? z
+  Deleting not_exists, path = /home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists
+      result = 0, error = Error removing file: No such file or directory
+  Deleting not_exists, path = /home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/not_exists
+      result = 0, error = Error trashing file: No such file or directory
+  Deleting dir_no-execute/file, path = /home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/dir_no-execute/file
+      result = 0, error = Error removing file: No such file or directory
+  Deleting lost_symlink, path = /home/eshaw/Downloads/glib-2.40.0/gio/tests/testdir_live-g-file/lost_symlink
+ok 9 /live-g-file/test_delete
+PASS: live-g-file 9 /live-g-file/test_delete
+ok 10 /live-g-file/test_make_directory_with_parents
+PASS: live-g-file 10 /live-g-file/test_make_directory_with_parents
+
+  Cleaning target testing structure in 'testdir_live-g-file'...
+    deleting 'dir1'
+    deleting 'subdir'
+    deleting 'dir-target'
+    deleting 'dir2'
+    deleting 'target-file'
+    deleting 'normal_file-symlink'
+    deleting 'pattern_file'
+    deleting 'executable_file'
+    deleting 'private_file'
+    deleting 'normal_file2'
+    deleting 'UTF_pr?i?lis? z'
+    deleting 'lost_symlink'
+    deleting 'dir_no-access'
+    deleting 'dir_no-write'
+    deleting 'target-file'
+    deleting 'normal_file'
+    deleting 'normal_file-symlink'
+    deleting 'executable_file~'
+    deleting 'private_file'
+    deleting 'normal_file2~'
+    deleting 'a'
+    deleting 'UTF_pr?i?lis? z'
+    deleting 'dir_hidden'
+    deleting '.a-hidden-file'
+    deleting 'file-in-.hidden1'
+    deleting '.hidden'
+    deleting 'file-in-.hidden2'
+    deleting 'pattern_file'
+    deleting 'normal_file2'
+    deleting 'not_exists2'
+    deleting 'not_exists3'
+    deleting 'not_exists4'
+ok 11 /live-g-file/final_clean
+PASS: live-g-file 11 /live-g-file/final_clean
+# End of live-g-file tests
+1..11

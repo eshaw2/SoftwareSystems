@@ -1,0 +1,12 @@
+# random seed: R02S9c57e11fa39632978c98d90c2a3a3e8b
+# Start of gdbus tests
+ok 1 /gdbus/registered-errors
+PASS: gdbus-error 1 /gdbus/registered-errors
+ok 2 /gdbus/unregistered-errors
+PASS: gdbus-error 2 /gdbus/unregistered-errors
+ok 3 /gdbus/transparent-gerror
+PASS: gdbus-error 3 /gdbus/transparent-gerror
+ok 4 /gdbus/register-error
+PASS: gdbus-error 4 /gdbus/register-error
+# End of gdbus tests
+1..4

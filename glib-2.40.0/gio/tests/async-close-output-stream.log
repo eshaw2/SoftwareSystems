@@ -1,0 +1,13 @@
+# random seed: R02Sd4fcd72b63b66ed2cb9f3d5a24fdb409
+# Start of close-async tests
+# Bug Reference: http://bugzilla.gnome.org/617937
+ok 1 /close-async/without-flush
+PASS: async-close-output-stream 1 /close-async/without-flush
+# Bug Reference: http://bugzilla.gnome.org/617937
+ok 2 /close-async/with-flush
+PASS: async-close-output-stream 2 /close-async/with-flush
+# Bug Reference: http://bugzilla.gnome.org/617937
+ok 3 /close-async/with-async-flush
+PASS: async-close-output-stream 3 /close-async/with-async-flush
+# End of close-async tests
+1..3

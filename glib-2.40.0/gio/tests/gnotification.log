@@ -1,0 +1,8 @@
+# random seed: R02Sf330adbddc52b011f487a208b5341b2b
+# Start of gnotification tests
+ok 1 /gnotification/basic
+PASS: gnotification 1 /gnotification/basic
+ok 2 /gnotification/properties
+PASS: gnotification 2 /gnotification/properties
+# End of gnotification tests
+1..2

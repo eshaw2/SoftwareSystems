@@ -1,0 +1,46 @@
+# random seed: R02Sf10000e7303787dbd83af234e632b229
+# Start of gtask tests
+ok 1 /gtask/basic
+PASS: task 1 /gtask/basic
+ok 2 /gtask/error
+PASS: task 2 /gtask/error
+ok 3 /gtask/return-from-same-iteration
+PASS: task 3 /gtask/return-from-same-iteration
+ok 4 /gtask/return-from-toplevel
+PASS: task 4 /gtask/return-from-toplevel
+ok 5 /gtask/return-from-anon-thread
+PASS: task 5 /gtask/return-from-anon-thread
+ok 6 /gtask/return-from-wrong-thread
+PASS: task 6 /gtask/return-from-wrong-thread
+ok 7 /gtask/no-callback
+PASS: task 7 /gtask/no-callback
+ok 8 /gtask/report-error
+PASS: task 8 /gtask/report-error
+ok 9 /gtask/priority
+PASS: task 9 /gtask/priority
+ok 10 /gtask/check-cancellable
+PASS: task 10 /gtask/check-cancellable
+ok 11 /gtask/return-if-cancelled
+PASS: task 11 /gtask/return-if-cancelled
+ok 12 /gtask/run-in-thread
+PASS: task 12 /gtask/run-in-thread
+ok 13 /gtask/run-in-thread-sync
+PASS: task 13 /gtask/run-in-thread-sync
+ok 14 /gtask/run-in-thread-priority
+PASS: task 14 /gtask/run-in-thread-priority
+ok 15 /gtask/run-in-thread-nested
+PASS: task 15 /gtask/run-in-thread-nested
+ok 16 /gtask/return-on-cancel
+PASS: task 16 /gtask/return-on-cancel
+ok 17 /gtask/return-on-cancel-sync
+PASS: task 17 /gtask/return-on-cancel-sync
+ok 18 /gtask/return-on-cancel-atomic
+PASS: task 18 /gtask/return-on-cancel-atomic
+ok 19 /gtask/return-pointer
+PASS: task 19 /gtask/return-pointer
+ok 20 /gtask/object-keepalive
+PASS: task 20 /gtask/object-keepalive
+ok 21 /gtask/legacy-error
+PASS: task 21 /gtask/legacy-error
+# End of gtask tests
+1..21

@@ -1,0 +1,10 @@
+# random seed: R02S69b3a68dbd3310646c77826cc4c465f7
+# Start of enum tests
+ok 1 /enum/basic
+PASS: enums 1 /enum/basic
+# End of enum tests
+# Start of flags tests
+ok 2 /flags/basic
+PASS: enums 2 /flags/basic
+# End of flags tests
+1..2

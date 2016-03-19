@@ -1,0 +1,8 @@
+# random seed: R02S43c04b672ca65e7b20b968bb3c8a70ab
+# Start of gwakeup tests
+ok 1 /gwakeup/semantics
+PASS: gwakeup 1 /gwakeup/semantics
+ok 2 /gwakeup/threaded
+PASS: gwakeup 2 /gwakeup/threaded
+# End of gwakeup tests
+1..2

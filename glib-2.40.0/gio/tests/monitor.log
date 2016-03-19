@@ -1,0 +1,6 @@
+# random seed: R02S8faed6042de1f4b33196edff80015e17
+# Start of monitor tests
+ok 1 /monitor/directory
+PASS: monitor 1 /monitor/directory
+# End of monitor tests
+1..1

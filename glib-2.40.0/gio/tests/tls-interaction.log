@@ -1,0 +1,112 @@
+# random seed: R02Sabbf97b671de46f2d77adb43d56b6b41
+# Start of tls-interaction tests
+# Start of ask-password tests
+# Start of invoke-with-loop tests
+ok 1 /tls-interaction/ask-password/invoke-with-loop/unhandled-implementation
+PASS: tls-interaction 1 /tls-interaction/ask-password/invoke-with-loop/unhandled-implementation
+ok 2 /tls-interaction/ask-password/invoke-with-loop/async-implementation-success
+PASS: tls-interaction 2 /tls-interaction/ask-password/invoke-with-loop/async-implementation-success
+ok 3 /tls-interaction/ask-password/invoke-with-loop/async-implementation-failure
+PASS: tls-interaction 3 /tls-interaction/ask-password/invoke-with-loop/async-implementation-failure
+ok 4 /tls-interaction/ask-password/invoke-with-loop/sync-implementation-success
+PASS: tls-interaction 4 /tls-interaction/ask-password/invoke-with-loop/sync-implementation-success
+ok 5 /tls-interaction/ask-password/invoke-with-loop/sync-implementation-failure
+PASS: tls-interaction 5 /tls-interaction/ask-password/invoke-with-loop/sync-implementation-failure
+# End of invoke-with-loop tests
+# Start of invoke-without-loop tests
+ok 6 /tls-interaction/ask-password/invoke-without-loop/unhandled-implementation
+PASS: tls-interaction 6 /tls-interaction/ask-password/invoke-without-loop/unhandled-implementation
+ok 7 /tls-interaction/ask-password/invoke-without-loop/async-implementation-success
+PASS: tls-interaction 7 /tls-interaction/ask-password/invoke-without-loop/async-implementation-success
+ok 8 /tls-interaction/ask-password/invoke-without-loop/async-implementation-failure
+PASS: tls-interaction 8 /tls-interaction/ask-password/invoke-without-loop/async-implementation-failure
+ok 9 /tls-interaction/ask-password/invoke-without-loop/sync-implementation-success
+PASS: tls-interaction 9 /tls-interaction/ask-password/invoke-without-loop/sync-implementation-success
+ok 10 /tls-interaction/ask-password/invoke-without-loop/sync-implementation-failure
+PASS: tls-interaction 10 /tls-interaction/ask-password/invoke-without-loop/sync-implementation-failure
+# End of invoke-without-loop tests
+# Start of invoke-in-loop tests
+ok 11 /tls-interaction/ask-password/invoke-in-loop/unhandled-implementation
+PASS: tls-interaction 11 /tls-interaction/ask-password/invoke-in-loop/unhandled-implementation
+ok 12 /tls-interaction/ask-password/invoke-in-loop/async-implementation-success
+PASS: tls-interaction 12 /tls-interaction/ask-password/invoke-in-loop/async-implementation-success
+ok 13 /tls-interaction/ask-password/invoke-in-loop/async-implementation-failure
+PASS: tls-interaction 13 /tls-interaction/ask-password/invoke-in-loop/async-implementation-failure
+ok 14 /tls-interaction/ask-password/invoke-in-loop/sync-implementation-success
+PASS: tls-interaction 14 /tls-interaction/ask-password/invoke-in-loop/sync-implementation-success
+ok 15 /tls-interaction/ask-password/invoke-in-loop/sync-implementation-failure
+PASS: tls-interaction 15 /tls-interaction/ask-password/invoke-in-loop/sync-implementation-failure
+# End of invoke-in-loop tests
+# Start of sync tests
+ok 16 /tls-interaction/ask-password/sync/unhandled-implementation
+PASS: tls-interaction 16 /tls-interaction/ask-password/sync/unhandled-implementation
+ok 17 /tls-interaction/ask-password/sync/sync-implementation-success
+PASS: tls-interaction 17 /tls-interaction/ask-password/sync/sync-implementation-success
+ok 18 /tls-interaction/ask-password/sync/sync-implementation-failure
+PASS: tls-interaction 18 /tls-interaction/ask-password/sync/sync-implementation-failure
+# End of sync tests
+# Start of async tests
+ok 19 /tls-interaction/ask-password/async/unhandled-implementation
+PASS: tls-interaction 19 /tls-interaction/ask-password/async/unhandled-implementation
+ok 20 /tls-interaction/ask-password/async/async-implementation-success
+PASS: tls-interaction 20 /tls-interaction/ask-password/async/async-implementation-success
+ok 21 /tls-interaction/ask-password/async/async-implementation-failure
+PASS: tls-interaction 21 /tls-interaction/ask-password/async/async-implementation-failure
+# End of async tests
+# End of ask-password tests
+# Start of request-certificate tests
+# Start of invoke-with-loop tests
+ok 22 /tls-interaction/request-certificate/invoke-with-loop/unhandled-implementation
+PASS: tls-interaction 22 /tls-interaction/request-certificate/invoke-with-loop/unhandled-implementation
+ok 23 /tls-interaction/request-certificate/invoke-with-loop/async-implementation-success
+PASS: tls-interaction 23 /tls-interaction/request-certificate/invoke-with-loop/async-implementation-success
+ok 24 /tls-interaction/request-certificate/invoke-with-loop/async-implementation-failure
+PASS: tls-interaction 24 /tls-interaction/request-certificate/invoke-with-loop/async-implementation-failure
+ok 25 /tls-interaction/request-certificate/invoke-with-loop/sync-implementation-success
+PASS: tls-interaction 25 /tls-interaction/request-certificate/invoke-with-loop/sync-implementation-success
+ok 26 /tls-interaction/request-certificate/invoke-with-loop/sync-implementation-failure
+PASS: tls-interaction 26 /tls-interaction/request-certificate/invoke-with-loop/sync-implementation-failure
+# End of invoke-with-loop tests
+# Start of invoke-without-loop tests
+ok 27 /tls-interaction/request-certificate/invoke-without-loop/unhandled-implementation
+PASS: tls-interaction 27 /tls-interaction/request-certificate/invoke-without-loop/unhandled-implementation
+ok 28 /tls-interaction/request-certificate/invoke-without-loop/async-implementation-success
+PASS: tls-interaction 28 /tls-interaction/request-certificate/invoke-without-loop/async-implementation-success
+ok 29 /tls-interaction/request-certificate/invoke-without-loop/async-implementation-failure
+PASS: tls-interaction 29 /tls-interaction/request-certificate/invoke-without-loop/async-implementation-failure
+ok 30 /tls-interaction/request-certificate/invoke-without-loop/sync-implementation-success
+PASS: tls-interaction 30 /tls-interaction/request-certificate/invoke-without-loop/sync-implementation-success
+ok 31 /tls-interaction/request-certificate/invoke-without-loop/sync-implementation-failure
+PASS: tls-interaction 31 /tls-interaction/request-certificate/invoke-without-loop/sync-implementation-failure
+# End of invoke-without-loop tests
+# Start of invoke-in-loop tests
+ok 32 /tls-interaction/request-certificate/invoke-in-loop/unhandled-implementation
+PASS: tls-interaction 32 /tls-interaction/request-certificate/invoke-in-loop/unhandled-implementation
+ok 33 /tls-interaction/request-certificate/invoke-in-loop/async-implementation-success
+PASS: tls-interaction 33 /tls-interaction/request-certificate/invoke-in-loop/async-implementation-success
+ok 34 /tls-interaction/request-certificate/invoke-in-loop/async-implementation-failure
+PASS: tls-interaction 34 /tls-interaction/request-certificate/invoke-in-loop/async-implementation-failure
+ok 35 /tls-interaction/request-certificate/invoke-in-loop/sync-implementation-success
+PASS: tls-interaction 35 /tls-interaction/request-certificate/invoke-in-loop/sync-implementation-success
+ok 36 /tls-interaction/request-certificate/invoke-in-loop/sync-implementation-failure
+PASS: tls-interaction 36 /tls-interaction/request-certificate/invoke-in-loop/sync-implementation-failure
+# End of invoke-in-loop tests
+# Start of sync tests
+ok 37 /tls-interaction/request-certificate/sync/unhandled-implementation
+PASS: tls-interaction 37 /tls-interaction/request-certificate/sync/unhandled-implementation
+ok 38 /tls-interaction/request-certificate/sync/sync-implementation-success
+PASS: tls-interaction 38 /tls-interaction/request-certificate/sync/sync-implementation-success
+ok 39 /tls-interaction/request-certificate/sync/sync-implementation-failure
+PASS: tls-interaction 39 /tls-interaction/request-certificate/sync/sync-implementation-failure
+# End of sync tests
+# Start of async tests
+ok 40 /tls-interaction/request-certificate/async/unhandled-implementation
+PASS: tls-interaction 40 /tls-interaction/request-certificate/async/unhandled-implementation
+ok 41 /tls-interaction/request-certificate/async/async-implementation-success
+PASS: tls-interaction 41 /tls-interaction/request-certificate/async/async-implementation-success
+ok 42 /tls-interaction/request-certificate/async/async-implementation-failure
+PASS: tls-interaction 42 /tls-interaction/request-certificate/async/async-implementation-failure
+# End of async tests
+# End of request-certificate tests
+# End of tls-interaction tests
+1..42

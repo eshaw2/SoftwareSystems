@@ -1,0 +1,10 @@
+# random seed: R02Sa210d8aa27151cdc7f058d6c44fa4ffe
+# Start of gdbus tests
+# Start of connection tests
+ok 1 /gdbus/connection/flush
+PASS: gdbus-connection-slow 1 /gdbus/connection/flush
+ok 2 /gdbus/connection/large_message
+PASS: gdbus-connection-slow 2 /gdbus/connection/large_message
+# End of connection tests
+# End of gdbus tests
+1..2

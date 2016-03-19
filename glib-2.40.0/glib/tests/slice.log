@@ -1,0 +1,12 @@
+# random seed: R02S7b94c9373bc595ef42bbb78921618fb9
+# Start of slice tests
+ok 1 /slice/config
+PASS: slice 1 /slice/config
+ok 2 /slice/copy
+PASS: slice 2 /slice/copy
+ok 3 /slice/chain
+PASS: slice 3 /slice/chain
+ok 4 /slice/allocate
+PASS: slice 4 /slice/allocate
+# End of slice tests
+1..4

@@ -1,0 +1,26 @@
+# random seed: R02S078f0a8435328e3f64b47bf951831433
+# Start of gmenu tests
+ok 1 /gmenu/equality
+PASS: gmenumodel 1 /gmenu/equality
+ok 2 /gmenu/random
+PASS: gmenumodel 2 /gmenu/random
+ok 3 /gmenu/attributes
+PASS: gmenumodel 3 /gmenu/attributes
+ok 4 /gmenu/links
+PASS: gmenumodel 4 /gmenu/links
+ok 5 /gmenu/mutable
+PASS: gmenumodel 5 /gmenu/mutable
+ok 6 /gmenu/convenience
+PASS: gmenumodel 6 /gmenu/convenience
+ok 7 /gmenu/menuitem
+PASS: gmenumodel 7 /gmenu/menuitem
+# Start of dbus tests
+ok 8 /gmenu/dbus/roundtrip
+PASS: gmenumodel 8 /gmenu/dbus/roundtrip
+ok 9 /gmenu/dbus/subscriptions
+PASS: gmenumodel 9 /gmenu/dbus/subscriptions
+ok 10 /gmenu/dbus/threaded
+PASS: gmenumodel 10 /gmenu/dbus/threaded
+# End of dbus tests
+# End of gmenu tests
+1..10

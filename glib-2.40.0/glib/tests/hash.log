@@ -1,0 +1,54 @@
+# random seed: R02S091a0ac931f3e39dd212c596758886c8
+# Start of hash tests
+ok 1 /hash/misc
+PASS: hash 1 /hash/misc
+ok 2 /hash/one
+PASS: hash 2 /hash/one
+ok 3 /hash/honeyman
+PASS: hash 3 /hash/honeyman
+ok 4 /hash/direct
+PASS: hash 4 /hash/direct
+ok 5 /hash/direct2
+PASS: hash 5 /hash/direct2
+ok 6 /hash/int
+PASS: hash 6 /hash/int
+ok 7 /hash/int64
+PASS: hash 7 /hash/int64
+ok 8 /hash/double
+PASS: hash 8 /hash/double
+ok 9 /hash/string
+PASS: hash 9 /hash/string
+ok 10 /hash/set
+PASS: hash 10 /hash/set
+ok 11 /hash/set-ref
+PASS: hash 11 /hash/set-ref
+ok 12 /hash/ref
+PASS: hash 12 /hash/ref
+ok 13 /hash/remove-all
+PASS: hash 13 /hash/remove-all
+ok 14 /hash/find
+PASS: hash 14 /hash/find
+ok 15 /hash/foreach
+PASS: hash 15 /hash/foreach
+ok 16 /hash/foreach-steal
+PASS: hash 16 /hash/foreach-steal
+# Bug Reference: http://bugzilla.gnome.org/642944
+ok 17 /hash/lookup-null-key
+PASS: hash 17 /hash/lookup-null-key
+# Bug Reference: http://bugzilla.gnome.org/650459
+ok 18 /hash/destroy-modify
+PASS: hash 18 /hash/destroy-modify
+ok 19 /hash/consistency
+PASS: hash 19 /hash/consistency
+# Bug Reference: http://bugzilla.gnome.org/662544
+ok 20 /hash/iter-replace
+PASS: hash 20 /hash/iter-replace
+# Bug Reference: http://bugzilla.gnome.org/692815
+ok 21 /hash/set-insert-corruption
+PASS: hash 21 /hash/set-insert-corruption
+ok 22 /hash/set-to-strv
+PASS: hash 22 /hash/set-to-strv
+ok 23 /hash/primes
+PASS: hash 23 /hash/primes
+# End of hash tests
+1..23

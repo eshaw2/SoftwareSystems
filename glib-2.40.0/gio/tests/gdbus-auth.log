@@ -1,0 +1,20 @@
+# random seed: R02Sd91aeb4fd5e0301a7d00be2e9e9dc68e
+# Start of gdbus tests
+# Start of auth tests
+# Start of client tests
+ok 1 /gdbus/auth/client/EXTERNAL
+PASS: gdbus-auth 1 /gdbus/auth/client/EXTERNAL
+ok 2 /gdbus/auth/client/DBUS_COOKIE_SHA1
+PASS: gdbus-auth 2 /gdbus/auth/client/DBUS_COOKIE_SHA1
+# End of client tests
+# Start of server tests
+ok 3 /gdbus/auth/server/ANONYMOUS
+PASS: gdbus-auth 3 /gdbus/auth/server/ANONYMOUS
+ok 4 /gdbus/auth/server/EXTERNAL
+PASS: gdbus-auth 4 /gdbus/auth/server/EXTERNAL
+ok 5 /gdbus/auth/server/DBUS_COOKIE_SHA1
+PASS: gdbus-auth 5 /gdbus/auth/server/DBUS_COOKIE_SHA1
+# End of server tests
+# End of auth tests
+# End of gdbus tests
+1..5

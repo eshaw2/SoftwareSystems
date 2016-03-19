@@ -1,0 +1,18 @@
+# random seed: R02Sded256508e2124f3995d71333240beef
+# Start of gdbus tests
+ok 1 /gdbus/empty-address
+PASS: gdbus-addresses 1 /gdbus/empty-address
+ok 2 /gdbus/unix-address
+PASS: gdbus-addresses 2 /gdbus/unix-address
+ok 3 /gdbus/nonce-tcp-address
+PASS: gdbus-addresses 3 /gdbus/nonce-tcp-address
+ok 4 /gdbus/tcp-address
+PASS: gdbus-addresses 4 /gdbus/tcp-address
+ok 5 /gdbus/autolaunch-address
+PASS: gdbus-addresses 5 /gdbus/autolaunch-address
+ok 6 /gdbus/mixed-address
+PASS: gdbus-addresses 6 /gdbus/mixed-address
+ok 7 /gdbus/escape-address
+PASS: gdbus-addresses 7 /gdbus/escape-address
+# End of gdbus tests
+1..7

@@ -1,0 +1,12 @@
+# random seed: R02S7d4a3350c252374ed5feccbab625dd90
+# Start of type tests
+ok 1 /type/registration-serial
+PASS: type 1 /type/registration-serial
+ok 2 /type/interface-prerequisite
+PASS: type 2 /type/interface-prerequisite
+ok 3 /type/interface-check
+PASS: type 3 /type/interface-check
+ok 4 /type/next-base
+PASS: type 4 /type/next-base
+# End of type tests
+1..4

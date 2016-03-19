@@ -1,0 +1,6 @@
+# random seed: R02Sf2ee3316baf4b92a8fd9924f43eca05a
+# Start of unix-streams tests
+ok 1 /unix-streams/file-descriptors
+PASS: unix-fd 1 /unix-streams/file-descriptors
+# End of unix-streams tests
+1..1

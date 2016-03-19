@@ -1,0 +1,1173 @@
+==5909== Memcheck, a memory error detector
+==5909== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==5909== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==5909== Command: ./Kmeanscluster lotus.jpg
+==5909== Parent PID: 2315
+==5909== 
+==5909== Invalid read of size 1
+==5909==    at 0x4013BC: main (in /home/eshaw/Documents/SoftwareSystems/KMeans/Kmeanscluster)
+==5909==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==5909== 
+==5909== 
+==5909== Process terminating with default action of signal 11 (SIGSEGV)
+==5909==  Access not within mapped region at address 0x0
+==5909==    at 0x4013BC: main (in /home/eshaw/Documents/SoftwareSystems/KMeans/Kmeanscluster)
+==5909==  If you believe this happened as a result of a stack
+==5909==  overflow in your program's main thread (unlikely but
+==5909==  possible), you can try to increase the size of the
+==5909==  main thread stack using the --main-stacksize= flag.
+==5909==  The main thread stack size used in this run was 8388608.
+==5909== 
+==5909== HEAP SUMMARY:
+==5909==     in use at exit: 371,586 bytes in 246 blocks
+==5909==   total heap usage: 282 allocs, 36 frees, 709,484 bytes allocated
+==5909== 
+==5909== 48 bytes in 1 blocks are possibly lost in loss record 109 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B7DEEF: cv::BmpDecoder::BmpDecoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6AE67: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 48 bytes in 1 blocks are possibly lost in loss record 110 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B82470: cv::JpegDecoder::JpegDecoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6B13A: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 52 bytes in 1 blocks are possibly lost in loss record 112 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B7364B: cv::HdrDecoder::HdrDecoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6AFD3: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 52 bytes in 1 blocks are possibly lost in loss record 113 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B83F19: cv::SunRasterDecoder::SunRasterDecoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6B402: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 52 bytes in 1 blocks are possibly lost in loss record 114 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B766D5: cv::ExrDecoder::ExrDecoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6BB90: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 56 bytes in 1 blocks are possibly lost in loss record 115 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B7366F: cv::HdrDecoder::HdrDecoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6AFD3: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 56 bytes in 1 blocks are possibly lost in loss record 116 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B74EF0: cv::PngDecoder::PngDecoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6B88C: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 60 bytes in 1 blocks are possibly lost in loss record 117 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B86742: cv::Jpeg2KDecoder::Jpeg2KDecoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6BA0E: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 64 bytes in 1 blocks are possibly lost in loss record 118 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B85C00: cv::WebPEncoder::WebPEncoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6B350: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 68 bytes in 1 blocks are possibly lost in loss record 119 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B87A40: cv::Jpeg2KEncoder::Jpeg2KEncoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6BACF: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 72 bytes in 1 blocks are possibly lost in loss record 130 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B736F0: cv::HdrEncoder::HdrEncoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6B085: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 72 bytes in 1 blocks are possibly lost in loss record 131 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B7F900: cv::TiffEncoder::TiffEncoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6B7CB: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 72 bytes in 1 blocks are possibly lost in loss record 132 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B76FD0: cv::ExrEncoder::ExrEncoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6BC51: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 76 bytes in 1 blocks are possibly lost in loss record 133 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B7DF70: cv::BmpEncoder::BmpEncoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6AF19: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 76 bytes in 1 blocks are possibly lost in loss record 134 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B832E0: cv::JpegEncoder::JpegEncoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6B1EC: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 76 bytes in 1 blocks are possibly lost in loss record 135 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B83F90: cv::SunRasterEncoder::SunRasterEncoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6B4C3: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 84 bytes in 1 blocks are possibly lost in loss record 136 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B75020: cv::PngEncoder::PngEncoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6B94D: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 100 bytes in 1 blocks are possibly lost in loss record 137 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5B7BEF0: cv::PxMEncoder::PxMEncoder() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B6B645: cv::ImageCodecInitializer::ImageCodecInitializer() (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x5B65F95: _GLOBAL__sub_I_loadsave.cpp (in /usr/local/lib/libopencv_imgcodecs.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 124 bytes in 1 blocks are possibly lost in loss record 138 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117010: cvRegisterType (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117243: CvType::CvType(char const*, int (*)(void const*), void (*)(void**), void* (*)(CvFileStorage*, CvFileNode*), void (*)(CvFileStorage*, char const*, void const*, CvAttrList), void* (*)(void const*)) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D1E2D: _GLOBAL__sub_I_histogram.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 125 bytes in 1 blocks are possibly lost in loss record 139 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117010: cvRegisterType (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117243: CvType::CvType(char const*, int (*)(void const*), void (*)(void**), void* (*)(CvFileStorage*, CvFileNode*), void (*)(CvFileStorage*, char const*, void const*, CvAttrList), void* (*)(void const*)) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7B5F: _GLOBAL__sub_I_persistence.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 125 bytes in 1 blocks are possibly lost in loss record 140 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117010: cvRegisterType (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117243: CvType::CvType(char const*, int (*)(void const*), void (*)(void**), void* (*)(CvFileStorage*, CvFileNode*), void (*)(CvFileStorage*, char const*, void const*, CvAttrList), void* (*)(void const*)) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7BFF: _GLOBAL__sub_I_persistence.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 126 bytes in 1 blocks are possibly lost in loss record 141 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117010: cvRegisterType (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117243: CvType::CvType(char const*, int (*)(void const*), void (*)(void**), void* (*)(CvFileStorage*, CvFileNode*), void (*)(CvFileStorage*, char const*, void const*, CvAttrList), void* (*)(void const*)) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7C4F: _GLOBAL__sub_I_persistence.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 128 bytes in 1 blocks are possibly lost in loss record 142 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117010: cvRegisterType (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117243: CvType::CvType(char const*, int (*)(void const*), void (*)(void**), void* (*)(CvFileStorage*, CvFileNode*), void (*)(CvFileStorage*, char const*, void const*, CvAttrList), void* (*)(void const*)) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7ABF: _GLOBAL__sub_I_persistence.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 129 bytes in 1 blocks are possibly lost in loss record 143 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117010: cvRegisterType (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117243: CvType::CvType(char const*, int (*)(void const*), void (*)(void**), void* (*)(CvFileStorage*, CvFileNode*), void (*)(CvFileStorage*, char const*, void const*, CvAttrList), void* (*)(void const*)) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7C9F: _GLOBAL__sub_I_persistence.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 133 bytes in 1 blocks are possibly lost in loss record 144 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117010: cvRegisterType (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117243: CvType::CvType(char const*, int (*)(void const*), void (*)(void**), void* (*)(CvFileStorage*, CvFileNode*), void (*)(CvFileStorage*, char const*, void const*, CvAttrList), void* (*)(void const*)) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7B0F: _GLOBAL__sub_I_persistence.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 133 bytes in 1 blocks are possibly lost in loss record 145 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117010: cvRegisterType (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x5117243: CvType::CvType(char const*, int (*)(void const*), void (*)(void**), void* (*)(CvFileStorage*, CvFileNode*), void (*)(CvFileStorage*, char const*, void const*, CvAttrList), void* (*)(void const*)) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7BAF: _GLOBAL__sub_I_persistence.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 1,040 bytes in 1 blocks are possibly lost in loss record 159 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7EC6: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 1,080 bytes in 1 blocks are possibly lost in loss record 160 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7D03: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 1,192 bytes in 1 blocks are possibly lost in loss record 161 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7F93: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 1,264 bytes in 1 blocks are possibly lost in loss record 164 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7EEF: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 1,276 bytes in 1 blocks are possibly lost in loss record 166 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2458: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 1,348 bytes in 1 blocks are possibly lost in loss record 167 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7FBC: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 1,408 bytes in 1 blocks are possibly lost in loss record 168 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D238B: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 1,600 bytes in 1 blocks are possibly lost in loss record 170 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D1FDC: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 1,716 bytes in 1 blocks are possibly lost in loss record 171 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7F18: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 1,968 bytes in 1 blocks are possibly lost in loss record 172 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7FE5: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 2,088 bytes in 1 blocks are possibly lost in loss record 173 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D1F83: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 2,376 bytes in 1 blocks are possibly lost in loss record 174 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7DF9: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 2,400 bytes in 1 blocks are possibly lost in loss record 175 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2176: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 2,416 bytes in 1 blocks are possibly lost in loss record 176 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7D55: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 2,492 bytes in 1 blocks are possibly lost in loss record 177 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7D2C: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 2,500 bytes in 1 blocks are possibly lost in loss record 178 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE800E: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 2,544 bytes in 1 blocks are possibly lost in loss record 179 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7E22: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 2,632 bytes in 1 blocks are possibly lost in loss record 180 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D1FB3: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 2,692 bytes in 1 blocks are possibly lost in loss record 181 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D202E: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 2,912 bytes in 1 blocks are possibly lost in loss record 182 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D221A: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 3,040 bytes in 1 blocks are possibly lost in loss record 183 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7E74: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 3,416 bytes in 1 blocks are possibly lost in loss record 184 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7E4B: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 3,556 bytes in 1 blocks are possibly lost in loss record 185 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7DD0: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 3,688 bytes in 1 blocks are possibly lost in loss record 186 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2243: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 3,820 bytes in 1 blocks are possibly lost in loss record 187 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D21C8: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 4,072 bytes in 1 blocks are possibly lost in loss record 188 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2362: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 4,412 bytes in 1 blocks are possibly lost in loss record 189 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2339: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 4,492 bytes in 1 blocks are possibly lost in loss record 190 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7F6A: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 4,524 bytes in 1 blocks are possibly lost in loss record 191 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2080: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 4,584 bytes in 1 blocks are possibly lost in loss record 192 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7D7E: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 4,624 bytes in 1 blocks are possibly lost in loss record 193 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2295: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 4,776 bytes in 1 blocks are possibly lost in loss record 194 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2005: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 4,780 bytes in 1 blocks are possibly lost in loss record 195 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D22BE: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 4,932 bytes in 1 blocks are possibly lost in loss record 196 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2124: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 5,132 bytes in 1 blocks are possibly lost in loss record 197 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D20A9: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 5,932 bytes in 1 blocks are possibly lost in loss record 198 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D23DD: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 6,208 bytes in 1 blocks are possibly lost in loss record 199 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D24AA: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 7,520 bytes in 1 blocks are possibly lost in loss record 200 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D20D2: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 7,700 bytes in 1 blocks are possibly lost in loss record 201 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D23B4: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 7,760 bytes in 1 blocks are possibly lost in loss record 202 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7E9D: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 7,792 bytes in 1 blocks are possibly lost in loss record 203 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D226C: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 8,424 bytes in 1 blocks are possibly lost in loss record 204 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D242F: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 8,480 bytes in 1 blocks are possibly lost in loss record 205 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D214D: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 8,660 bytes in 1 blocks are possibly lost in loss record 206 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2057: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 10,296 bytes in 1 blocks are possibly lost in loss record 207 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D219F: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 10,952 bytes in 1 blocks are possibly lost in loss record 208 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D21F1: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 11,264 bytes in 1 blocks are possibly lost in loss record 209 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2481: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 11,716 bytes in 1 blocks are possibly lost in loss record 210 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7CD3: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 12,420 bytes in 1 blocks are possibly lost in loss record 211 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2310: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 16,496 bytes in 1 blocks are possibly lost in loss record 212 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7F41: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 16,776 bytes in 1 blocks are possibly lost in loss record 213 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D2406: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 17,008 bytes in 1 blocks are possibly lost in loss record 214 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D22E7: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 22,344 bytes in 1 blocks are possibly lost in loss record 215 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4EE7DA7: _GLOBAL__sub_I_opencl_kernels_core.cpp (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== 53,856 bytes in 1 blocks are possibly lost in loss record 216 of 216
+==5909==    at 0x4C2AB80: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==5909==    by 0x4FA62D1: cv::fastMalloc(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x4F0A48C: cv::String::allocate(unsigned long) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x507A596: cv::ocl::ProgramSource::ProgramSource(char const*) (in /usr/local/lib/libopencv_core.so.3.1.0)
+==5909==    by 0x73D20FB: _GLOBAL__sub_I_opencl_kernels_imgproc.cpp (in /usr/local/lib/libopencv_imgproc.so.3.1.0)
+==5909==    by 0x4010139: call_init.part.0 (dl-init.c:78)
+==5909==    by 0x4010222: call_init (dl-init.c:36)
+==5909==    by 0x4010222: _dl_init (dl-init.c:126)
+==5909==    by 0x4001309: ??? (in /lib/x86_64-linux-gnu/ld-2.19.so)
+==5909==    by 0x1: ???
+==5909==    by 0xFFF00010A: ???
+==5909==    by 0xFFF00011A: ???
+==5909== 
+==5909== LEAK SUMMARY:
+==5909==    definitely lost: 0 bytes in 0 blocks
+==5909==    indirectly lost: 0 bytes in 0 blocks
+==5909==      possibly lost: 356,603 bytes in 80 blocks
+==5909==    still reachable: 14,983 bytes in 166 blocks
+==5909==         suppressed: 0 bytes in 0 blocks
+==5909== Reachable blocks (those to which a pointer was found) are not shown.
+==5909== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==5909== 
+==5909== For counts of detected and suppressed errors, rerun with: -v
+==5909== ERROR SUMMARY: 81 errors from 81 contexts (suppressed: 0 from 0)

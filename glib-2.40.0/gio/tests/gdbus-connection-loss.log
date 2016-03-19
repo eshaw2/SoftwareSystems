@@ -1,0 +1,6 @@
+# random seed: R02S48112401701717fb66086c8da98e2641
+# Start of gdbus tests
+ok 1 /gdbus/connection-loss
+PASS: gdbus-connection-loss 1 /gdbus/connection-loss
+# End of gdbus tests
+1..1

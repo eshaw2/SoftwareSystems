@@ -1,0 +1,12 @@
+# random seed: R02Se67f69d1c4e707510f6aa11b5b27456d
+# Start of malloc tests
+ok 1 /malloc/incomplete-vtable
+PASS: malloc 1 /malloc/incomplete-vtable
+ok 2 /malloc/double-vtable
+PASS: malloc 2 /malloc/double-vtable
+ok 3 /malloc/fallback-calloc
+PASS: malloc 3 /malloc/fallback-calloc
+ok 4 /malloc/profiler
+PASS: malloc 4 /malloc/profiler
+# End of malloc tests
+1..4

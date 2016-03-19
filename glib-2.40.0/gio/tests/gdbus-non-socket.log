@@ -1,0 +1,6 @@
+# random seed: R02Sad917ac247d4b6fec3dccd23a0011ed5
+# Start of gdbus tests
+ok 1 /gdbus/non-socket
+PASS: gdbus-non-socket 1 /gdbus/non-socket
+# End of gdbus tests
+1..1

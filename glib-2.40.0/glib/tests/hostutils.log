@@ -1,0 +1,10 @@
+# random seed: R02S83e369edef1a7362e5fa00f335a416f9
+# Start of hostutils tests
+ok 1 /hostutils/to_ascii
+PASS: hostutils 1 /hostutils/to_ascii
+ok 2 /hostutils/to_unicode
+PASS: hostutils 2 /hostutils/to_unicode
+ok 3 /hostutils/is_ip_addr
+PASS: hostutils 3 /hostutils/is_ip_addr
+# End of hostutils tests
+1..3

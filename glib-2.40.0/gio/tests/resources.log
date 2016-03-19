@@ -1,0 +1,24 @@
+# random seed: R02S920460c7d21c184f922af31c1865a26b
+# Start of resource tests
+ok 1 /resource/file
+PASS: resources 1 /resource/file
+ok 2 /resource/data
+PASS: resources 2 /resource/data
+ok 3 /resource/registered
+PASS: resources 3 /resource/registered
+ok 4 /resource/manual
+PASS: resources 4 /resource/manual
+ok 5 /resource/manual2
+PASS: resources 5 /resource/manual2
+ok 6 /resource/automatic
+PASS: resources 6 /resource/automatic
+ok 7 /resource/module
+PASS: resources 7 /resource/module
+# Start of uri tests
+ok 8 /resource/uri/query-info
+PASS: resources 8 /resource/uri/query-info
+ok 9 /resource/uri/file
+PASS: resources 9 /resource/uri/file
+# End of uri tests
+# End of resource tests
+1..9

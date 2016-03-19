@@ -1,0 +1,14 @@
+# random seed: R02S3343be922d473b395af0319dcdb9ca94
+# Start of gdbus tests
+# Start of codegen tests
+ok 1 /gdbus/codegen/annotations
+PASS: gdbus-test-codegen 1 /gdbus/codegen/annotations
+ok 2 /gdbus/codegen/interface_stability
+PASS: gdbus-test-codegen 2 /gdbus/codegen/interface_stability
+ok 3 /gdbus/codegen/object-manager
+PASS: gdbus-test-codegen 3 /gdbus/codegen/object-manager
+ok 4 /gdbus/codegen/property-naming
+PASS: gdbus-test-codegen 4 /gdbus/codegen/property-naming
+# End of codegen tests
+# End of gdbus tests
+1..4

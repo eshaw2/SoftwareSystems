@@ -1,0 +1,39 @@
+# random seed: R02S42321d6481a93cfa75fddf5c9c9ed972
+# Start of file tests
+ok 1 /file/basic
+PASS: file 1 /file/basic
+ok 2 /file/parent
+PASS: file 2 /file/parent
+ok 3 /file/child
+PASS: file 3 /file/child
+ok 4 /file/type
+PASS: file 4 /file/type
+ok 5 /file/parse-name
+PASS: file 5 /file/parse-name
+ok 6 /file/replace-load
+PASS: file 6 /file/replace-load
+# Bug Reference: http://bugzilla.gnome.org/629301
+ok 7 /file/replace-cancel
+PASS: file 7 /file/replace-cancel
+ok 8 /file/async-delete
+PASS: file 8 /file/async-delete
+ok 9 /file/copy-preserve-mode
+PASS: file 9 /file/copy-preserve-mode
+ok 10 /file/measure
+PASS: file 10 /file/measure
+ok 11 /file/measure-async
+PASS: file 11 /file/measure-async
+# Start of async-create-delete tests
+ok 12 /file/async-create-delete/0
+PASS: file 12 /file/async-create-delete/0
+ok 13 /file/async-create-delete/1
+PASS: file 13 /file/async-create-delete/1
+ok 14 /file/async-create-delete/10
+PASS: file 14 /file/async-create-delete/10
+ok 15 /file/async-create-delete/25
+PASS: file 15 /file/async-create-delete/25
+ok 16 /file/async-create-delete/4096
+PASS: file 16 /file/async-create-delete/4096
+# End of async-create-delete tests
+# End of file tests
+1..16

@@ -1,0 +1,38 @@
+# random seed: R02Scf4cd0a1a36899bb498fbcaaad248384
+# Start of socket tests
+ok 1 /socket/ipv4_sync
+PASS: socket 1 /socket/ipv4_sync
+ok 2 /socket/ipv4_async
+PASS: socket 2 /socket/ipv4_async
+ok 3 /socket/ipv6_sync
+PASS: socket 3 /socket/ipv6_sync
+ok 4 /socket/ipv6_async
+PASS: socket 4 /socket/ipv6_async
+ok 5 /socket/ipv6_v4mapped
+PASS: socket 5 /socket/ipv6_v4mapped
+ok 6 /socket/close_graceful
+PASS: socket 6 /socket/close_graceful
+ok 7 /socket/timed_wait
+PASS: socket 7 /socket/timed_wait
+ok 8 /socket/address
+PASS: socket 8 /socket/address
+ok 9 /socket/unix-from-fd
+PASS: socket 9 /socket/unix-from-fd
+ok 10 /socket/unix-connection
+PASS: socket 10 /socket/unix-connection
+ok 11 /socket/unix-connection-ancillary-data
+PASS: socket 11 /socket/unix-connection-ancillary-data
+# Start of reuse tests
+ok 12 /socket/reuse/tcp
+PASS: socket 12 /socket/reuse/tcp
+ok 13 /socket/reuse/udp
+PASS: socket 13 /socket/reuse/udp
+# End of reuse tests
+# Start of get_available tests
+ok 14 /socket/get_available/datagram
+PASS: socket 14 /socket/get_available/datagram
+ok 15 /socket/get_available/stream
+PASS: socket 15 /socket/get_available/stream
+# End of get_available tests
+# End of socket tests
+1..15

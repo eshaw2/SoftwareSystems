@@ -1,0 +1,14 @@
+# random seed: R02S3a167f0d1e7a4f7db190b26a6e5c2c49
+# Start of gdbus tests
+ok 1 /gdbus/proxy
+PASS: gdbus-proxy 1 /gdbus/proxy
+# Start of proxy tests
+ok 2 /gdbus/proxy/no-properties
+PASS: gdbus-proxy 2 /gdbus/proxy/no-properties
+ok 3 /gdbus/proxy/wellknown-noauto
+PASS: gdbus-proxy 3 /gdbus/proxy/wellknown-noauto
+ok 4 /gdbus/proxy/async
+PASS: gdbus-proxy 4 /gdbus/proxy/async
+# End of proxy tests
+# End of gdbus tests
+1..4

@@ -1,0 +1,106 @@
+warning: translation is not working... skipping test. warning: translation is not working... skipping test.  # random seed: R02S402346d816781c2835eb5bc5474a63ca
+# Start of gsettings tests
+ok 1 /gsettings/basic
+PASS: gsettings 1 /gsettings/basic
+ok 2 /gsettings/no-schema
+PASS: gsettings 2 /gsettings/no-schema
+ok 3 /gsettings/unknown-key
+PASS: gsettings 3 /gsettings/unknown-key
+ok 4 /gsettings/wrong-type
+PASS: gsettings 4 /gsettings/wrong-type
+ok 5 /gsettings/wrong-path
+PASS: gsettings 5 /gsettings/wrong-path
+ok 6 /gsettings/no-path
+PASS: gsettings 6 /gsettings/no-path
+ok 7 /gsettings/basic-types
+PASS: gsettings 7 /gsettings/basic-types
+ok 8 /gsettings/complex-types
+PASS: gsettings 8 /gsettings/complex-types
+ok 9 /gsettings/changes
+PASS: gsettings 9 /gsettings/changes
+ok 10 /gsettings/l10n
+PASS: gsettings 10 /gsettings/l10n
+ok 11 /gsettings/l10n-context
+PASS: gsettings 11 /gsettings/l10n-context
+ok 12 /gsettings/delay-apply
+PASS: gsettings 12 /gsettings/delay-apply
+ok 13 /gsettings/delay-revert
+PASS: gsettings 13 /gsettings/delay-revert
+ok 14 /gsettings/delay-child
+PASS: gsettings 14 /gsettings/delay-child
+ok 15 /gsettings/atomic
+PASS: gsettings 15 /gsettings/atomic
+ok 16 /gsettings/simple-binding
+PASS: gsettings 16 /gsettings/simple-binding
+ok 17 /gsettings/directional-binding
+PASS: gsettings 17 /gsettings/directional-binding
+ok 18 /gsettings/custom-binding
+PASS: gsettings 18 /gsettings/custom-binding
+ok 19 /gsettings/no-change-binding
+PASS: gsettings 19 /gsettings/no-change-binding
+ok 20 /gsettings/unbinding
+PASS: gsettings 20 /gsettings/unbinding
+ok 21 /gsettings/writable-binding
+PASS: gsettings 21 /gsettings/writable-binding
+ok 22 /gsettings/typesafe-binding
+PASS: gsettings 22 /gsettings/typesafe-binding
+ok 23 /gsettings/no-read-binding
+PASS: gsettings 23 /gsettings/no-read-binding
+ok 24 /gsettings/no-write-binding
+PASS: gsettings 24 /gsettings/no-write-binding
+ok 25 /gsettings/keyfile
+PASS: gsettings 25 /gsettings/keyfile
+ok 26 /gsettings/child-schema
+PASS: gsettings 26 /gsettings/child-schema
+ok 27 /gsettings/strinfo
+PASS: gsettings 27 /gsettings/strinfo
+ok 28 /gsettings/enums
+PASS: gsettings 28 /gsettings/enums
+ok 29 /gsettings/flags
+PASS: gsettings 29 /gsettings/flags
+ok 30 /gsettings/range
+PASS: gsettings 30 /gsettings/range
+ok 31 /gsettings/list-items
+PASS: gsettings 31 /gsettings/list-items
+ok 32 /gsettings/list-schemas
+PASS: gsettings 32 /gsettings/list-schemas
+ok 33 /gsettings/mapped
+PASS: gsettings 33 /gsettings/mapped
+ok 34 /gsettings/get-range
+PASS: gsettings 34 /gsettings/get-range
+ok 35 /gsettings/schema-source
+PASS: gsettings 35 /gsettings/schema-source
+ok 36 /gsettings/actions
+PASS: gsettings 36 /gsettings/actions
+ok 37 /gsettings/null-backend
+PASS: gsettings 37 /gsettings/null-backend
+ok 38 /gsettings/memory-backend
+PASS: gsettings 38 /gsettings/memory-backend
+ok 39 /gsettings/read-descriptions
+PASS: gsettings 39 /gsettings/read-descriptions
+ok 40 /gsettings/test-extended-schema
+PASS: gsettings 40 /gsettings/test-extended-schema
+ok 41 /gsettings/default-value
+PASS: gsettings 41 /gsettings/default-value
+# Start of no-read-binding tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of no-read-binding tests
+# Start of no-write-binding tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of no-write-binding tests
+# Start of enums tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of enums tests
+# Start of flags tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of flags tests
+# Start of range tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of range tests
+# End of gsettings tests
+1..41

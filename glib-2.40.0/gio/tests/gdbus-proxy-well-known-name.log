@@ -1,0 +1,6 @@
+# random seed: R02Sa5e714334712aa3062446ef71b3abbc7
+# Start of gdbus tests
+ok 1 /gdbus/proxy-well-known-name
+PASS: gdbus-proxy-well-known-name 1 /gdbus/proxy-well-known-name
+# End of gdbus tests
+1..1

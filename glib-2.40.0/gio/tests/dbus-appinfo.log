@@ -1,0 +1,6 @@
+# random seed: R02S3eab84e1e1c4fa437169328169a70407
+# Start of appinfo tests
+ok 1 /appinfo/dbusappinfo
+PASS: dbus-appinfo 1 /appinfo/dbusappinfo
+# End of appinfo tests
+1..1

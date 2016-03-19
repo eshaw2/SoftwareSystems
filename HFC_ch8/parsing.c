@@ -20,7 +20,6 @@ void printKeyValue( gpointer key, gpointer value, gpointer userData ) {
 void main() {
 	gchar *content, **word;
 	gsize length;
-	char* key_ptr;
  	int* value_ptr;
 
 	g_file_get_contents(filename, &content, &length, NULL);
@@ -41,7 +40,6 @@ void main() {
 			*cntptr = 1;
 			g_hash_table_insert(hash, *word, cntptr);
 		}
-	// }
 	}
 	g_hash_table_foreach(hash, printKeyValue, NULL);
 	g_fprintf(stderr, "there are a total of %i unique words.\n", g_hash_table_size(hash));

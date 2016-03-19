@@ -1,0 +1,183 @@
+===========================================
+   glib 2.40.0: gio/tests/test-suite.log
+===========================================
+
+# TOTAL: 680
+# PASS:  649
+# SKIP:  31
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+
+.. contents:: :depth: 2
+
+PASS: defaultvalue
+==================
+
+# random seed: R02Sa4a815b51b475410d593a39b18b34062
+# Start of Default Values tests
+ok 1 /Default Values/GAppInfoMonitor # SKIP singleton
+SKIP: defaultvalue 1 /Default Values/GAppInfoMonitor # SKIP singleton
+ok 2 /Default Values/GAppLaunchContext
+PASS: defaultvalue 2 /Default Values/GAppLaunchContext
+ok 3 /Default Values/GApplicationCommandLine
+PASS: defaultvalue 3 /Default Values/GApplicationCommandLine
+# skipping GApplication:is-remote
+ok 4 /Default Values/GApplication
+PASS: defaultvalue 4 /Default Values/GApplication
+ok 5 /Default Values/GBinding # SKIP mandatory construct params
+SKIP: defaultvalue 5 /Default Values/GBinding # SKIP mandatory construct params
+ok 6 /Default Values/GBufferedInputStream # SKIP mandatory construct params
+SKIP: defaultvalue 6 /Default Values/GBufferedInputStream # SKIP mandatory construct params
+ok 7 /Default Values/GBufferedOutputStream # SKIP mandatory construct params
+SKIP: defaultvalue 7 /Default Values/GBufferedOutputStream # SKIP mandatory construct params
+ok 8 /Default Values/GBytesIcon
+PASS: defaultvalue 8 /Default Values/GBytesIcon
+ok 9 /Default Values/GCancellable
+PASS: defaultvalue 9 /Default Values/GCancellable
+ok 10 /Default Values/GCharsetConverter # SKIP mandatory construct params
+SKIP: defaultvalue 10 /Default Values/GCharsetConverter # SKIP mandatory construct params
+ok 11 /Default Values/GConverterInputStream # SKIP mandatory construct params
+SKIP: defaultvalue 11 /Default Values/GConverterInputStream # SKIP mandatory construct params
+ok 12 /Default Values/GConverterOutputStream # SKIP mandatory construct params
+SKIP: defaultvalue 12 /Default Values/GConverterOutputStream # SKIP mandatory construct params
+ok 13 /Default Values/GCredentials
+PASS: defaultvalue 13 /Default Values/GCredentials
+ok 14 /Default Values/GDataInputStream # SKIP mandatory construct params
+SKIP: defaultvalue 14 /Default Values/GDataInputStream # SKIP mandatory construct params
+ok 15 /Default Values/GDataOutputStream # SKIP mandatory construct params
+SKIP: defaultvalue 15 /Default Values/GDataOutputStream # SKIP mandatory construct params
+ok 16 /Default Values/GDBusActionGroup # SKIP mandatory construct params
+SKIP: defaultvalue 16 /Default Values/GDBusActionGroup # SKIP mandatory construct params
+ok 17 /Default Values/GDBusAuthObserver
+PASS: defaultvalue 17 /Default Values/GDBusAuthObserver
+ok 18 /Default Values/GDBusConnection # SKIP mandatory construct params
+SKIP: defaultvalue 18 /Default Values/GDBusConnection # SKIP mandatory construct params
+ok 19 /Default Values/GDBusMenuModel # SKIP crash in finalize
+SKIP: defaultvalue 19 /Default Values/GDBusMenuModel # SKIP crash in finalize
+ok 20 /Default Values/GDBusMessage
+PASS: defaultvalue 20 /Default Values/GDBusMessage
+ok 21 /Default Values/GDBusMethodInvocation # SKIP crash in finalize
+SKIP: defaultvalue 21 /Default Values/GDBusMethodInvocation # SKIP crash in finalize
+ok 22 /Default Values/GDBusObjectManagerClient # SKIP mandatory construct params
+SKIP: defaultvalue 22 /Default Values/GDBusObjectManagerClient # SKIP mandatory construct params
+ok 23 /Default Values/GDBusObjectManagerServer # SKIP mandatory construct params
+SKIP: defaultvalue 23 /Default Values/GDBusObjectManagerServer # SKIP mandatory construct params
+ok 24 /Default Values/GDBusObjectProxy
+PASS: defaultvalue 24 /Default Values/GDBusObjectProxy
+ok 25 /Default Values/GDBusObjectSkeleton
+PASS: defaultvalue 25 /Default Values/GDBusObjectSkeleton
+ok 26 /Default Values/GDBusProxy # SKIP mandatory construct params
+SKIP: defaultvalue 26 /Default Values/GDBusProxy # SKIP mandatory construct params
+ok 27 /Default Values/GDBusServer # SKIP mandatory construct params
+SKIP: defaultvalue 27 /Default Values/GDBusServer # SKIP mandatory construct params
+ok 28 /Default Values/GEmblemedIcon
+PASS: defaultvalue 28 /Default Values/GEmblemedIcon
+ok 29 /Default Values/GEmblem
+PASS: defaultvalue 29 /Default Values/GEmblem
+ok 30 /Default Values/GFileEnumerator # SKIP should be abstract
+SKIP: defaultvalue 30 /Default Values/GFileEnumerator # SKIP should be abstract
+ok 31 /Default Values/GFileIcon
+PASS: defaultvalue 31 /Default Values/GFileIcon
+ok 32 /Default Values/GFileInfo
+PASS: defaultvalue 32 /Default Values/GFileInfo
+ok 33 /Default Values/GFileInputStream
+PASS: defaultvalue 33 /Default Values/GFileInputStream
+ok 34 /Default Values/GFileIOStream # SKIP should be abstract
+SKIP: defaultvalue 34 /Default Values/GFileIOStream # SKIP should be abstract
+ok 35 /Default Values/GFilenameCompleter
+PASS: defaultvalue 35 /Default Values/GFilenameCompleter
+ok 36 /Default Values/GFileOutputStream
+PASS: defaultvalue 36 /Default Values/GFileOutputStream
+ok 37 /Default Values/GInetAddress # SKIP mandatory construct params
+SKIP: defaultvalue 37 /Default Values/GInetAddress # SKIP mandatory construct params
+ok 38 /Default Values/GInetAddressMask # SKIP initialization failed
+SKIP: defaultvalue 38 /Default Values/GInetAddressMask # SKIP initialization failed
+ok 39 /Default Values/GInetSocketAddress # SKIP mandatory construct params
+SKIP: defaultvalue 39 /Default Values/GInetSocketAddress # SKIP mandatory construct params
+ok 40 /Default Values/GInitiallyUnowned
+PASS: defaultvalue 40 /Default Values/GInitiallyUnowned
+ok 41 /Default Values/GIOModule
+PASS: defaultvalue 41 /Default Values/GIOModule
+ok 42 /Default Values/GMemoryInputStream
+PASS: defaultvalue 42 /Default Values/GMemoryInputStream
+ok 43 /Default Values/GMemoryOutputStream
+PASS: defaultvalue 43 /Default Values/GMemoryOutputStream
+ok 44 /Default Values/GMenu
+PASS: defaultvalue 44 /Default Values/GMenu
+ok 45 /Default Values/GMenuItem
+PASS: defaultvalue 45 /Default Values/GMenuItem
+ok 46 /Default Values/GMountOperation
+PASS: defaultvalue 46 /Default Values/GMountOperation
+ok 47 /Default Values/GNetworkAddress
+PASS: defaultvalue 47 /Default Values/GNetworkAddress
+ok 48 /Default Values/GNetworkService
+PASS: defaultvalue 48 /Default Values/GNetworkService
+ok 49 /Default Values/GNotification
+PASS: defaultvalue 49 /Default Values/GNotification
+ok 50 /Default Values/GObject
+PASS: defaultvalue 50 /Default Values/GObject
+ok 51 /Default Values/GPropertyAction # SKIP mandatory construct params
+SKIP: defaultvalue 51 /Default Values/GPropertyAction # SKIP mandatory construct params
+# skipping GProxyAddressEnumerator:proxy-resolver
+ok 52 /Default Values/GProxyAddressEnumerator
+PASS: defaultvalue 52 /Default Values/GProxyAddressEnumerator
+ok 53 /Default Values/GProxyAddress # SKIP mandatory construct params
+SKIP: defaultvalue 53 /Default Values/GProxyAddress # SKIP mandatory construct params
+ok 54 /Default Values/GResolver
+PASS: defaultvalue 54 /Default Values/GResolver
+ok 55 /Default Values/GSettings # SKIP mandatory construct params
+SKIP: defaultvalue 55 /Default Values/GSettings # SKIP mandatory construct params
+ok 56 /Default Values/GSimpleAction
+PASS: defaultvalue 56 /Default Values/GSimpleAction
+ok 57 /Default Values/GSimpleActionGroup
+PASS: defaultvalue 57 /Default Values/GSimpleActionGroup
+ok 58 /Default Values/GSimpleAsyncResult
+PASS: defaultvalue 58 /Default Values/GSimpleAsyncResult
+ok 59 /Default Values/GSimplePermission
+PASS: defaultvalue 59 /Default Values/GSimplePermission
+ok 60 /Default Values/GSimpleProxyResolver
+PASS: defaultvalue 60 /Default Values/GSimpleProxyResolver
+# skipping GSocketClient:proxy-resolver
+ok 61 /Default Values/GSocketClient
+PASS: defaultvalue 61 /Default Values/GSocketClient
+ok 62 /Default Values/GSocketConnection # SKIP mandatory construct params
+SKIP: defaultvalue 62 /Default Values/GSocketConnection # SKIP mandatory construct params
+ok 63 /Default Values/GSocket # SKIP initialization failed
+SKIP: defaultvalue 63 /Default Values/GSocket # SKIP initialization failed
+ok 64 /Default Values/GSocketListener
+PASS: defaultvalue 64 /Default Values/GSocketListener
+ok 65 /Default Values/GSocketService
+PASS: defaultvalue 65 /Default Values/GSocketService
+ok 66 /Default Values/GSubprocess # SKIP initialization failed
+SKIP: defaultvalue 66 /Default Values/GSubprocess # SKIP initialization failed
+ok 67 /Default Values/GSubprocessLauncher
+PASS: defaultvalue 67 /Default Values/GSubprocessLauncher
+ok 68 /Default Values/GTask
+PASS: defaultvalue 68 /Default Values/GTask
+ok 69 /Default Values/GTcpConnection # SKIP mandatory construct params
+SKIP: defaultvalue 69 /Default Values/GTcpConnection # SKIP mandatory construct params
+ok 70 /Default Values/GTcpWrapperConnection # SKIP mandatory construct params
+SKIP: defaultvalue 70 /Default Values/GTcpWrapperConnection # SKIP mandatory construct params
+ok 71 /Default Values/GTestDBus
+PASS: defaultvalue 71 /Default Values/GTestDBus
+ok 72 /Default Values/GThemedIcon # SKIP mandatory construct params
+SKIP: defaultvalue 72 /Default Values/GThemedIcon # SKIP mandatory construct params
+ok 73 /Default Values/GThreadedSocketService
+PASS: defaultvalue 73 /Default Values/GThreadedSocketService
+ok 74 /Default Values/GTlsInteraction
+PASS: defaultvalue 74 /Default Values/GTlsInteraction
+ok 75 /Default Values/GTlsPassword
+PASS: defaultvalue 75 /Default Values/GTlsPassword
+ok 76 /Default Values/GVfs
+PASS: defaultvalue 76 /Default Values/GVfs
+ok 77 /Default Values/GVolumeMonitor
+PASS: defaultvalue 77 /Default Values/GVolumeMonitor
+ok 78 /Default Values/GZlibCompressor
+PASS: defaultvalue 78 /Default Values/GZlibCompressor
+ok 79 /Default Values/GZlibDecompressor
+PASS: defaultvalue 79 /Default Values/GZlibDecompressor
+# End of Default Values tests
+1..79
+

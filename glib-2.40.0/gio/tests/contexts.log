@@ -1,0 +1,10 @@
+# random seed: R02Sfd987872f5ea5d072a4d8f9ffcdabde3
+# Start of gio tests
+# Start of contexts tests
+ok 1 /gio/contexts/thread-independence
+PASS: contexts 1 /gio/contexts/thread-independence
+ok 2 /gio/contexts/context-independence
+PASS: contexts 2 /gio/contexts/context-independence
+# End of contexts tests
+# End of gio tests
+1..2

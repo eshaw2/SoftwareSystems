@@ -1,0 +1,6 @@
+# random seed: R02S3f524e28f0db217c8f4e5c50201feb61
+# Start of g-file-info tests
+ok 1 /g-file-info/test_g_file_info
+PASS: g-file-info 1 /g-file-info/test_g_file_info
+# End of g-file-info tests
+1..1

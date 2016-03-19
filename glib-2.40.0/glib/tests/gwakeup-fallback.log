@@ -1,0 +1,8 @@
+# random seed: R02S870747651dfd266d55967b60b0ce7d4a
+# Start of gwakeup tests
+ok 1 /gwakeup/semantics-fallback
+PASS: gwakeup-fallback 1 /gwakeup/semantics-fallback
+ok 2 /gwakeup/threaded-fallback
+PASS: gwakeup-fallback 2 /gwakeup/threaded-fallback
+# End of gwakeup tests
+1..2

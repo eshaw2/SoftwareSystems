@@ -1,0 +1,6 @@
+# random seed: R02Sf3c1925ea4b3be51c8ef7bee0cf0bcfb
+# Start of srvtarget tests
+ok 1 /srvtarget/srv-target-ordering
+PASS: srvtarget 1 /srvtarget/srv-target-ordering
+# End of srvtarget tests
+1..1

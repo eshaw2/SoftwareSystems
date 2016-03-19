@@ -1,0 +1,10 @@
+# random seed: R02Sb69c1266b86688be955299612cffb869
+# Start of pollable tests
+ok 1 /pollable/unix
+PASS: pollable 1 /pollable/unix
+ok 2 /pollable/converter
+PASS: pollable 2 /pollable/converter
+ok 3 /pollable/socket
+PASS: pollable 3 /pollable/socket
+# End of pollable tests
+1..3

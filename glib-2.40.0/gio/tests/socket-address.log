@@ -1,0 +1,10 @@
+# random seed: R02S6b3e2a4c6e34a0504f742370a34625a3
+# Start of socket tests
+# Start of address tests
+# Start of unix tests
+ok 1 /socket/address/unix/construct
+PASS: socket-address 1 /socket/address/unix/construct
+# End of unix tests
+# End of address tests
+# End of socket tests
+1..1

@@ -1,0 +1,6 @@
+# random seed: R02S6eb0f85969520ae419dadb18e00c040f
+# Start of gdbus tests
+ok 1 /gdbus/peer-object-manager
+PASS: gdbus-peer-object-manager 1 /gdbus/peer-object-manager
+# End of gdbus tests
+1..1

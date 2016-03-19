@@ -1,0 +1,41 @@
+# random seed: R02S34f49b39baf13f57a0ab816daa4c02a9
+# Start of g-file tests
+ok 1 /g-file/test_g_file_new_null
+PASS: g-file 1 /g-file/test_g_file_new_null
+ok 2 /g-file/test_g_file_new_for_path
+PASS: g-file 2 /g-file/test_g_file_new_for_path
+ok 3 /g-file/test_g_file_new_for_uri
+PASS: g-file 3 /g-file/test_g_file_new_for_uri
+ok 4 /g-file/test_g_file_dup
+PASS: g-file 4 /g-file/test_g_file_dup
+ok 5 /g-file/test_g_file_get_parse_name_utf8
+PASS: g-file 5 /g-file/test_g_file_get_parse_name_utf8
+file:///home/eshaw/Downloads/glib-2.40.0/gio/tests
+file:///home/eshaw/Downloads/glib-2.40.0/gio
+file:///tmp
+file:////UTF-8%20p%C5%99%C3%ADli%C5%A1%20%C5%BElu%C5%A5ou%C4%8Dk%C3%BD%20k%C5%AF%C5%88
+file:///UTF-8%20p%C5%99%C3%ADli%C5%A1%20%C5%BElu%C5%A5ou%C4%8Dk%C3%BD%20k%C5%AF%C5%88
+ok 6 /g-file/test_g_file_new_for_commandline_arg
+PASS: g-file 6 /g-file/test_g_file_new_for_commandline_arg
+/dir1 /dir1/dir2/dir3/
+/dir1/ /dir1/dir2/dir3/
+/dir1 /dir1/dir2/dir3
+/dir1/ /dir1/dir2/dir3
+/tmp/ /something/
+/dir1/dir2 /dir1/
+//dir1/new //dir1/new/dir2/dir3
+/dir/UTF-8 p??li? ?lu?ou?k? k?? /dir/UTF-8 p??li? ?lu?ou?k? k??/dir2
+file:///dir1 file:///dir1/dir2/dir3/
+file:///dir1/ file:///dir1/dir2/dir3/
+file:///dir1 file:///dir1/dir2/dir3
+file:///dir1/ file:///dir1/dir2/dir3
+file:///tmp/ file:///something/
+file:///dir1/dir2 file:///dir1/
+file:////dir1/new file:////dir1/new/dir2/dir3
+file:///dir/UTF-8%20p%C5%99%C3%ADli%C5%A1%20%C5%BElu%C5%A5ou%C4%8Dk%C3%BD%20k%C5%AF%C5%88 file:///dir/UTF-8%20p%C5%99%C3%ADli%C5%A1%20%C5%BElu%C5%A5ou%C4%8Dk%C3%BD%20k%C5%AF%C5%88/dir2
+ok 7 /g-file/test_g_file_has_prefix
+PASS: g-file 7 /g-file/test_g_file_has_prefix
+ok 8 /g-file/test_g_file_get_parent_child
+PASS: g-file 8 /g-file/test_g_file_get_parent_child
+# End of g-file tests
+1..8

@@ -1,0 +1,10 @@
+# random seed: R02S420a3ae81fe8a930bda6a64cefddaac3
+# Start of readwrite tests
+ok 1 /readwrite/test_g_file_open_readwrite
+PASS: readwrite 1 /readwrite/test_g_file_open_readwrite
+ok 2 /readwrite/test_g_file_create_readwrite
+PASS: readwrite 2 /readwrite/test_g_file_create_readwrite
+ok 3 /readwrite/test_g_file_replace_readwrite
+PASS: readwrite 3 /readwrite/test_g_file_replace_readwrite
+# End of readwrite tests
+1..3

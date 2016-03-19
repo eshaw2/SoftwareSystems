@@ -1,0 +1,12 @@
+# random seed: R02S0e94a0002d4183a13e9767622288376e
+# Start of gdbus tests
+ok 1 /gdbus/introspection-parser
+PASS: gdbus-introspection 1 /gdbus/introspection-parser
+ok 2 /gdbus/introspection-generate
+PASS: gdbus-introspection 2 /gdbus/introspection-generate
+ok 3 /gdbus/introspection-default-direction
+PASS: gdbus-introspection 3 /gdbus/introspection-default-direction
+ok 4 /gdbus/introspection-extra-data
+PASS: gdbus-introspection 4 /gdbus/introspection-extra-data
+# End of gdbus tests
+1..4

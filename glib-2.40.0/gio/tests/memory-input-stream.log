@@ -1,0 +1,16 @@
+# random seed: R02Sc3c7a2b72e4eda100eaef07c02e63e8b
+# Start of memory-input-stream tests
+ok 1 /memory-input-stream/read-chunks
+PASS: memory-input-stream 1 /memory-input-stream/read-chunks
+ok 2 /memory-input-stream/async
+PASS: memory-input-stream 2 /memory-input-stream/async
+ok 3 /memory-input-stream/seek
+PASS: memory-input-stream 3 /memory-input-stream/seek
+ok 4 /memory-input-stream/truncate
+PASS: memory-input-stream 4 /memory-input-stream/truncate
+ok 5 /memory-input-stream/read-bytes
+PASS: memory-input-stream 5 /memory-input-stream/read-bytes
+ok 6 /memory-input-stream/from-bytes
+PASS: memory-input-stream 6 /memory-input-stream/from-bytes
+# End of memory-input-stream tests
+1..6
