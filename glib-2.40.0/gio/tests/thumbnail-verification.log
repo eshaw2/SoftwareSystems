@@ -1,6 +1,0 @@
-# random seed: R02S9bc6afdac5c2338aa13fe10181b87e0b
-# Start of png-thumbs tests
-ok 1 /png-thumbs/validity
-PASS: thumbnail-verification 1 /png-thumbs/validity
-# End of png-thumbs tests
-1..1

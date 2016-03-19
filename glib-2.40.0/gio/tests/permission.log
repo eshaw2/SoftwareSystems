@@ -1,6 +1,0 @@
-# random seed: R02Sf9f86bdf845bdc9f290f7e929ba46d51
-# Start of permission tests
-ok 1 /permission/simple
-PASS: permission 1 /permission/simple
-# End of permission tests
-1..1

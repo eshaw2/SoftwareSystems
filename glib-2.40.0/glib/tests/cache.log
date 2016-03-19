@@ -1,6 +1,0 @@
-# random seed: R02Sd953748925f0b3ce4b2648ac58c4fc32
-# Start of cache tests
-ok 1 /cache/basic
-PASS: cache 1 /cache/basic
-# End of cache tests
-1..1

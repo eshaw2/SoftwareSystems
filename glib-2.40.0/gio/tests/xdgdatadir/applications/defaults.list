@@ -1,4 +1,0 @@
-[Default Applications]
-image/bmp=myapp4.desktop;
-image/png=myapp3.desktop;
-x-scheme-handler/ftp=myapp5.desktop;

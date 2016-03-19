@@ -1,6 +1,0 @@
-# random seed: R02S316c1ed76ef6df32eb79470eb82e90c8
-# Start of io-stream tests
-ok 1 /io-stream/copy-chunks
-PASS: io-stream 1 /io-stream/copy-chunks
-# End of io-stream tests
-1..1

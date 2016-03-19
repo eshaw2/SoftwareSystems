@@ -1,6 +1,0 @@
-# random seed: R02S1af031f1f87f434d3598c771a545f0a9
-# Start of gvfs tests
-ok 1 /gvfs/local
-PASS: vfs 1 /gvfs/local
-# End of gvfs tests
-1..1

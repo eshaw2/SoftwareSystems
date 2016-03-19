@@ -1,6 +1,0 @@
-# random seed: R02Sd74323fdf7b0b43692534eea34586cb8
-# Start of gdbus tests
-ok 1 /gdbus/bz627724
-PASS: gdbus-bz627724 1 /gdbus/bz627724
-# End of gdbus tests
-1..1

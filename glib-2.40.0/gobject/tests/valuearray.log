@@ -1,6 +1,0 @@
-# random seed: R02S1df2e21716740a00011d20f0f9d7e4e1
-# Start of valuearray tests
-ok 1 /valuearray/basic
-PASS: valuearray 1 /valuearray/basic
-# End of valuearray tests
-1..1

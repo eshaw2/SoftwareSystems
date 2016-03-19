@@ -1,6 +1,0 @@
-# random seed: R02S6fdcd1351dae4d07d1312cb04333a57d
-# Start of cancellable tests
-ok 1 /cancellable/multiple-concurrent
-PASS: cancellable 1 /cancellable/multiple-concurrent
-# End of cancellable tests
-1..1

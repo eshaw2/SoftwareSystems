@@ -1,8 +1,0 @@
-# random seed: R02S8df526db2d467ba1fdff3aedb10d879a
-# Start of dir tests
-ok 1 /dir/read
-PASS: dir 1 /dir/read
-ok 2 /dir/nonexisting
-PASS: dir 2 /dir/nonexisting
-# End of dir tests
-1..2

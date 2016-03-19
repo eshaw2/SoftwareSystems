@@ -1,8 +1,0 @@
-# random seed: R02Sca3439f910d5d1de91e3e887843db2a7
-# Start of gdbus tests
-ok 1 /gdbus/close-pending
-PASS: gdbus-close-pending 1 /gdbus/close-pending
-ok 2 /gdbus/unref-pending
-PASS: gdbus-close-pending 2 /gdbus/unref-pending
-# End of gdbus tests
-1..2

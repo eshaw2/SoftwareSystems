@@ -1,7 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Type=Application
-Exec=true %f
-Name=my app 5
-MimeType=image/bmp;x-scheme-handler/ftp;

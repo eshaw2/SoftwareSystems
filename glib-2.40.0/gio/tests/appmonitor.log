@@ -1,6 +1,0 @@
-# random seed: R02Se648b196532f0bc4b4e3ec381a774e19
-# Start of monitor tests
-ok 1 /monitor/app
-PASS: appmonitor 1 /monitor/app
-# End of monitor tests
-1..1

@@ -1,8 +1,0 @@
-# random seed: R02Sa0f19f6f8efe75da7568e7ebfac974f0
-# Start of filter-stream tests
-ok 1 /filter-stream/input
-PASS: sleepy-stream 1 /filter-stream/input
-ok 2 /filter-stream/async
-PASS: sleepy-stream 2 /filter-stream/async
-# End of filter-stream tests
-1..2

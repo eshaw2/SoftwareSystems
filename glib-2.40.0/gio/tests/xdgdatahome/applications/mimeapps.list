@@ -1,7 +1,0 @@
-[Added Associations]
-image/png=myapp.desktop;myapp2.desktop;
-image/bmp=myapp5.desktop;myapp4.desktop;
-
-[Default Applications]
-image/png=myapp.desktop
-image/bmp=myapp5.desktop
